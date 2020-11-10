@@ -18,6 +18,8 @@ namespace ProfileStudent.Entity
         public SEXUAL Sexual { get; set; }
         public string PathAvatar { get; set; }
 
+        public List<LearningHistory> ListLearningHistory { get; set; }
+
         /// <summary>
         /// Tạo 1 sinh viên giả
         /// </summary>
@@ -34,6 +36,20 @@ namespace ProfileStudent.Entity
                 Sexual = SEXUAL.Male,
                 PathAvatar = Application.StartupPath + "\\Img\\logo.png",
             };
+            List<LearningHistory> histories = new List<LearningHistory>();
+            for(int i = 1; i <= 12; i++)
+            {
+                LearningHistory history = new LearningHistory
+                {
+                    ID = i.ToString(),
+                    Lop = i.ToString(),
+                    Truong = "Trường Quốc Học",
+                    HocLuc = "Giỏi",
+                    Address = "TP Huế"
+                };
+                histories.Add(history);
+            }
+            student.ListLearningHistory = histories;
             return student;
         }
     }

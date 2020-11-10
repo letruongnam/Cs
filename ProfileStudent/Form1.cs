@@ -36,6 +36,8 @@ namespace ProfileStudent
             }
             if (!string.IsNullOrEmpty(student.PathAvatar))
                 picAvatar.ImageLocation = student.PathAvatar;
+            gridHistory.AutoGenerateColumns = false;
+            gridHistory.DataSource = student.ListLearningHistory;
         }
 
         private void picAvatar_Click(object sender, EventArgs e)

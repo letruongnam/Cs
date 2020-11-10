@@ -47,7 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridHistory = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +57,7 @@
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // picAvatar
@@ -88,7 +88,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(145, 12);
+            this.groupBox1.Location = new System.Drawing.Point(141, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(547, 184);
             this.groupBox1.TabIndex = 1;
@@ -225,11 +225,11 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.gridHistory);
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Location = new System.Drawing.Point(13, 205);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 263);
+            this.panel1.Size = new System.Drawing.Size(676, 263);
             this.panel1.TabIndex = 2;
             // 
             // toolStrip1
@@ -238,7 +238,7 @@
             this.toolStripLabel1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(680, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(676, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -249,39 +249,43 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(100, 22);
             this.toolStripLabel1.Text = "Quá trình học tập";
             // 
-            // dataGridView1
+            // gridHistory
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(680, 238);
-            this.dataGridView1.TabIndex = 1;
+            this.gridHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridHistory.Location = new System.Drawing.Point(0, 25);
+            this.gridHistory.Name = "gridHistory";
+            this.gridHistory.Size = new System.Drawing.Size(676, 238);
+            this.gridHistory.TabIndex = 1;
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "Lop";
             this.Column1.HeaderText = "Lớp";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "Truong";
             this.Column2.HeaderText = "Trường";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
+            this.Column3.DataPropertyName = "Address";
             this.Column3.HeaderText = "Địa chỉ trường";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
+            this.Column4.DataPropertyName = "HocLuc";
             this.Column4.HeaderText = "Học lực";
             this.Column4.Name = "Column4";
             // 
@@ -294,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 477);
+            this.ClientSize = new System.Drawing.Size(697, 477);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picAvatar);
@@ -307,7 +311,7 @@
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,14 +335,14 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridHistory;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }
 
