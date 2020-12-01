@@ -19,7 +19,7 @@ namespace ProfileStudent
         {
             InitializeComponent();
             student = Student.CreateFakeStudent();
-
+           
             txtID.Text = student.ID;
             txtFirstName.Text = student.FirstName;
             txtLastName.Text = student.LastName;
