@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV", "QLSV\QLSV.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLSV_O nha", "QLSV_O nha\QLSV_O nha.csproj", "{2CAA3043-BC13-4C68-B2C0-7853DC193422}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppQLSV", "AppQLSV\AppQLSV.csproj", "{49288469-6F88-4E4E-ACD7-726EB38E2C9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{2CAA3043-BC13-4C68-B2C0-7853DC193422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAA3043-BC13-4C68-B2C0-7853DC193422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAA3043-BC13-4C68-B2C0-7853DC193422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49288469-6F88-4E4E-ACD7-726EB38E2C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49288469-6F88-4E4E-ACD7-726EB38E2C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49288469-6F88-4E4E-ACD7-726EB38E2C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49288469-6F88-4E4E-ACD7-726EB38E2C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
