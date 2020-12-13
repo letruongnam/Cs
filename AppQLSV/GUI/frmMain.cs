@@ -14,19 +14,19 @@ namespace AppQLSV
 {
     public partial class frmMain : Form
     {
-        
+
         public frmMain()
         {
             InitializeComponent();
             gridLopHoc.AutoGenerateColumns = false;
-            dataGridView2.AutoGenerateColumns = false;
+            GridSinhVien.AutoGenerateColumns = false;
             DanhSachLopHoc();
         }
 
         private void btnThemLop_Click(object sender, EventArgs e)
         {
             var f = new frmLopChiTiet();
-            if(f.ShowDialog()== DialogResult.OK)
+            if (f.ShowDialog() == DialogResult.OK)
             {
                 DanhSachLopHoc();
             }
@@ -35,12 +35,19 @@ namespace AppQLSV
         private void DanhSachLopHoc()
         {
             AppQLSVDBContext db = new AppQLSVDBContext();
-           var ls =  db.Classrooms.OrderBy(e=>e.Name).ToList();
-         
+            var ls = db.Classrooms.OrderBy(e => e.Name).ToList();
+
             BDSLopHoc.DataSource = ls;
             gridLopHoc.DataSource = BDSLopHoc;
-          
-           
+
+
+        }
+        private void DanhSachSinhVien()
+        {
+            AppQLSVDBContext db = new AppQLSVDBContext();
+            var ls = db.Students.ToList();
+            bdsSinhVien.DataSource = ls;
+            GridSinhVien.DataSource = bdsSinhVien;
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -59,6 +66,12 @@ namespace AppQLSV
                     var lop = db.Classrooms.Where(t => t.ID == LopDangChon.ID).FirstOrDefault();
                     if (lop != null)
                     {
+                        var HocSinh = db.Students.Where(t => t.IDClassroom == lop.ID);
+                        foreach(Student student in HocSinh)
+                        {
+                            db.Students.Remove(student);
+                        }
+                      
                         db.Classrooms.Remove(lop);
                         db.SaveChanges();
                         DanhSachLopHoc();
@@ -82,7 +95,7 @@ namespace AppQLSV
                 var db = new AppQLSVDBContext();
                 var dsSv = db.Students.Where(h => h.IDClassroom == LopDangChon.ID).ToList();
                 bdsSinhVien.DataSource = dsSv;
-                dataGridView2.DataSource = bdsSinhVien;
+                GridSinhVien.DataSource = bdsSinhVien;
             }
         }
 
@@ -98,6 +111,74 @@ namespace AppQLSV
                 }
             }
           
+        }
+
+        private void bdsSinhVien_CurrentChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnThemHocSinh_Click(object sender, EventArgs e)
+        {
+            var LopDuocChon = BDSLopHoc.Current as Classroom;
+            String ID = LopDuocChon.ID;
+            var f = new frmHocSinhChiTiet(ID);
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                DanhSachLopHoc();
+            }
+
+        }
+
+        private void toolStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void btnSuaHocSinh_Click(object sender, EventArgs e)
+        {
+            var HocSinhDangChon = bdsSinhVien.Current as Student;
+            if (HocSinhDangChon.ID != null)
+            {
+                var f = new frmHocSinhChiTiet(HocSinhDangChon);
+                if (f.ShowDialog() == DialogResult.OK)
+                {
+                    DanhSachLopHoc();
+                }
+            }
+          
+            
+        }
+
+        private void btnXoaHocSinh_Click(object sender, EventArgs e)
+        {
+            var HocSinhDangChon = bdsSinhVien.Current as Student;
+            if (HocSinhDangChon != null)
+            {
+               var rs= MessageBox.Show("Bạn có muốn xóa sinh viên này không ?", "Chú ý", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) ;
+               if(rs == DialogResult.OK)
+                {
+                    var db = new AppQLSVDBContext();
+                    var Student = db.Students.Where(t => t.ID == HocSinhDangChon.ID).FirstOrDefault();
+                    if(Student!=null)
+                    db.Students.Remove(Student);
+                    db.SaveChanges();
+                    DanhSachLopHoc();
+                }
+               
+            }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            var LopDuocChon = BDSLopHoc.Current as Classroom;
+            String ID = LopDuocChon.ID;
+            var f = new frmEcxel(ID);
+            if(f.ShowDialog() == DialogResult.OK)
+            {
+                DanhSachLopHoc();
+            }
+         
         }
     }
 }

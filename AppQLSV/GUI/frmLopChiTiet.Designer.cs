@@ -61,7 +61,7 @@
             this.txtTenLop.Location = new System.Drawing.Point(162, 35);
             this.txtTenLop.Name = "txtTenLop";
             this.txtTenLop.Size = new System.Drawing.Size(400, 22);
-            this.txtTenLop.TabIndex = 1;
+            this.txtTenLop.TabIndex = 0;
             // 
             // txtPhongHoc
             // 
@@ -79,7 +79,7 @@
             this.btnBoQua.Location = new System.Drawing.Point(375, 133);
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(91, 38);
-            this.btnBoQua.TabIndex = 2;
+            this.btnBoQua.TabIndex = 3;
             this.btnBoQua.Text = "Bỏ Qua";
             this.btnBoQua.UseVisualStyleBackColor = true;
             // 

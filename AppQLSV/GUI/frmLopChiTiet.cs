@@ -45,21 +45,38 @@ namespace AppQLSV.GUI
                     Room = PhongHoc
                 };
                 var db = new AppQLSVDBContext();
-                db.Classrooms.Add(lop);
-                db.SaveChanges();
+                try
+                {
+                    db.Classrooms.Add(lop);
+                    db.SaveChanges();
+                    //nếu thêm thành công thì 
+                    DialogResult = DialogResult.OK;
+                }
+                catch
+                {
+                    MessageBox.Show("Bạn phải nhập đầy đủ nội dung");
+                }
 
-                //nếu thêm thành công thì 
-                DialogResult = DialogResult.OK;
+              
 
             }
             else
             {
                 var db = new AppQLSVDBContext();
                 var lop = db.Classrooms.Where(v => v.ID == lopHoc.ID).FirstOrDefault();
-                lop.Name = TenLop;
-                lop.Room = PhongHoc;
-                db.SaveChanges();
-                DialogResult = DialogResult.OK;
+                try
+                {
+                    lop.Name = TenLop;
+                    lop.Room = PhongHoc;
+                    db.SaveChanges();
+                    DialogResult = DialogResult.OK;
+                }
+                catch
+                {
+                    MessageBox.Show("Bạn chưa nhập đủ thông tin");
+                }
+                   
+                
             }
          
         }

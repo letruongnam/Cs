@@ -14,3 +14,11 @@ C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\EntityFramework.xm
 C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\obj\Debug\AppQLSV.csproj.CopyComplete
 C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\obj\Debug\AppQLSV.csprojAssemblyReference.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\obj\Debug\AppQLSV.frmHocSinhChiTiet.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.dll
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.xml
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\AppQLSV\obj\Debug\AppQLSV.GUI.frmEcxel.resources
