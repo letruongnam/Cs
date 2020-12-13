@@ -1,0 +1,13 @@
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\bin\Debug\WinformBasic.exe.config
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\bin\Debug\WinformBasic.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\bin\Debug\WinformBasic.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.csprojAssemblyReference.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.formCoBan2.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.frmCoBan.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.frmCoBan3.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.frmEndGame.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.Properties.Resources.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.csproj.GenerateResource.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.csproj.CoreCompileInputs.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\WinformBasic\obj\Debug\WinformBasic.pdb

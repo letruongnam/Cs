@@ -1,0 +1,11 @@
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\bin\Debug\Img\logo.png
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\bin\Debug\ProfileStudent.exe.config
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\bin\Debug\ProfileStudent.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\bin\Debug\ProfileStudent.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.csprojAssemblyReference.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.Form1.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.Properties.Resources.resources
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.csproj.GenerateResource.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.csproj.CoreCompileInputs.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\ProfileStudent\obj\Debug\ProfileStudent.pdb

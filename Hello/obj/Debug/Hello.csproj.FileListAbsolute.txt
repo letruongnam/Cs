@@ -1,0 +1,10 @@
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\bin\Debug\Hello.exe.config
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\bin\Debug\Hello.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\bin\Debug\Hello.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\bin\Debug\HUSCLib.dll
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\bin\Debug\HUSCLib.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\obj\Debug\Hello.csprojAssemblyReference.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\obj\Debug\Hello.csproj.CoreCompileInputs.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\obj\Debug\Hello.csproj.CopyComplete
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\obj\Debug\Hello.exe
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\Hello\obj\Debug\Hello.pdb

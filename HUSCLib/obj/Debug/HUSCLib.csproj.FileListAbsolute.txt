@@ -1,0 +1,6 @@
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\bin\Debug\HUSCLib.dll
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\bin\Debug\HUSCLib.pdb
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\obj\Debug\HUSCLib.csprojAssemblyReference.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\obj\Debug\HUSCLib.csproj.CoreCompileInputs.cache
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\obj\Debug\HUSCLib.dll
+C:\Users\nam\Desktop\git\Winform\Nhom1_2020\HUSCLib\obj\Debug\HUSCLib.pdb
